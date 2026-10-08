@@ -1,1 +1,15 @@
-# Project outputs will be added as infrastructure modules are implemented.
+output "vpc_id" {
+  value = module.networking.vpc_id
+}
+
+output "public_subnet_id" {
+  value = module.networking.public_subnet_id
+}
+
+output "private_subnet_id" {
+  value = module.networking.private_subnet_id
+}
+
+output "restricted_security_group_id" {
+  value = module.networking.restricted_security_group_id
+}

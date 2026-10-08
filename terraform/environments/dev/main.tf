@@ -1,1 +1,6 @@
-# Infrastructure modules will be added progressively.
+module "networking" {
+  source = "../../modules/networking"
+
+  project_name = var.project_name
+  environment  = var.environment
+}
